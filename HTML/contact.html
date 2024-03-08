@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact page (DDH)</title>
+  <link rel="stylesheet" href="../CSS/styles_otherPages.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="../HTML/mixes.html">Mixes</a>
+      <img src="../images/DDH_trans_black.png" alt=" ddh logo"> <!--this doesn't appear to be central justifid! -->
+      <a href="../HTML/live.html">Live</a>
+      <a href="../HTML/external.html">External</a>
+      <a href="../HTML/saveForLater.html">Visitors</a>
+    </nav>
+  </header>
+
+  <!-- I created a few sections and divs to try out different form styles.  The user
+  comes here after clicking on the contact button on the main page -->
+
+  <section>
+    <h1>Please fill out the detail below and then click the submit button near the bottom</h1>
+    <!-- Form action triggers an action when the send button (at bottom) is clicked 
+    I'd add this to more of my pages if doing more work on it.
+  so the action is you'll be diverted to my thanks for submitting page.-->
+    <form action="../HTML/thanks.html">
+      <!-- label and input work together
+      placeholder is optional and allows you to add helpful text to your text box
+      input type can be text for free string or to add an email address if you declare it
+      as email and so some validation is observed on valid email addresses -->
+      <p>
+        <label for="first_name">Enter your first name:</label>
+        <input type="text" placeholder="first name" name="first_name" id="first_name">
+      </p>
+      <p>
+        <label for="surname">Enter your surname:</label>
+        <input type="text" placeholder="surname" name="surname" id="surname">
+      </p>
+      <p>
+        <label for="email">Add your email address: </label>
+        <input type="email" placeholder="email address" name="email" id="email">
+      </p>
+  </section>
+
+  <br>
+
+  <!-- fieldset draws a line around the form, checkbox activates the tick box field,
+checked ticks the relevant one by default -->
+
+  <fieldset>
+
+    <h3>Choose your favourite main genres:</h3>
+    <!-- added checked so it's ticked by default (on purpose)-->
+    <div>
+      <label for="house">House</label>
+      <input type="checkbox" name="house" id="house" checked>
+    </div>
+
+    <div>
+      <label for="trance">Trance</label>
+      <input type="checkbox" name="trance" id="trance">
+    </div>
+
+    <div>
+      <!-- so this will show the checkbox first on purpose as was playing-->
+      <input type="checkbox" name="techno" id="techno">
+      <label for="techno">Techno</label>
+    </div>
+    <div>
+      <!-- so this will show the checkbox first on purpose as was playing-->
+      <input type="checkbox" name="other" id="other">
+      <label for="other">Other</label>
+    </div>
+  </fieldset>
+
+  <br>
+
+  <!-- type radio for the radio button and use of value is what would get returned with your 
+submission so you know what the user has selected -->
+
+  <fieldset>
+    <h3>Choose your favourite decade of dance music</h3>
+    <!-- p or div can be used below as the tutorial used the p tag (p tag keeps on the same line unless separate p per row) -->
+    <div>
+      <input type="radio" name="era" value="80s" id="80s">
+      <label for="80s">80s era</label>
+    </div>
+    <div>
+      <input type="radio" name="era" value="90s" id="90s" checked>
+      <label for="90s">90s era</label>
+    </div>
+    <div>
+      <input type="radio" name="era" value="00s" id="00s">
+      <label for="00s">00s era</label>
+    </div>
+    <div>
+      <input type="radio" name="era" value="10s" id="10s">
+      <label for="10s">10s era</label>
+    </div>
+    <div>
+      <input type="radio" name="era" value="20s" id="20s">
+      <label for="20s">20s era</label>
+    </div>
+  </fieldset>
+
+  <br>
+
+  <!-- option helps to create a dropeown list and value is important again as this is returned
+  on the submission so you know the option chosen by the user -->
+
+  <fieldset>
+    <h3>Choose your favourite DJ</h3>
+    <label for="fave_dj">Who's your favourite DJ from my list?</label>
+    <select name="fave_dj" id="fave_dj">
+      <option value="Tony De Vit" selected>Tony De Vit</option>
+      <option value="Stu Allan">Stu Allan</option>
+      <option value="Pete Tong">Pete Tong</option>
+      <option value="Carl Cox">Carl Cox</option>
+      <option value="Paul Oakenfold">Paul Oakenfold</option>
+      <option value="Fatboy Slim">Fatboy Slim</option>
+    </select>
+  </fieldset>
+
+  <br>
+
+  <!-- text area allows you to create an open field for open style string information as
+  entered freely by the user, so no restrictions on what they can type like other input types -->
+
+  <label for="more_info">Please share your feedback in the field below</label>
+  <br>
+  <textarea name="more_info" cols="70" rows="10" id="more_info" placeholder="enter details in here">
+</textarea>
+
+  <!-- Yes I could style the send button more when I get extra time :)  -->
+
+  <br>
+  <button>SEND</button>
+  </form>
+
+  <footer>
+    <div>
+      <p>No tracking cookies are stored during your session.</p>
+    </div>
+    <div id="top">
+      <a href="#">Back to top</a>
+    </div>
+    <div>
+      <p>Thanks for stopping by, hope to see you again soon.</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

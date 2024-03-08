@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DDH Website</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="icon" type="image/ico" href="../images/favicon.ico">
+
+  <!-- I wanted to add a favicon but I'll do that when I have spare time -->
+</head>
+
+<!-- created the header with anchors and/or images and set as flexbox in css to aid spacing -->
+
+<body>
+  <header>
+    <nav>
+      <!-- Burger menu button LEFT MENU VISIBLE FOR PURPOSES OF TASK -->
+      <button class="burger-menu-btn">☰ Menu</button>
+      <!-- Burger menu -->
+      <div class="burger-menu">
+        <a href="index.html">Home</a>
+        <a href="../HTML/mixes.html">Mixes</a>
+        <a href="../HTML/live.html">Live</a>
+        <a href="../HTML/external.html">External</a>
+        <a href="../HTML/saveForLater.html">Visitors</a>
+      </div>
+      <!-- Regular navigation links -->
+      <a href="index.html">Home</a>
+      <a href="../HTML/mixes.html">Mixes</a>
+      <img src="../images/DDH_trans_black.png" alt="ddh logo">
+      <a href="../HTML/live.html">Live</a>
+      <a href="../HTML/external.html">External</a>
+      <a href="../HTML/saveForLater.html">Visitors</a>
+    </nav>
+  </header>
+
+
+  <!-- I set the main areas within the class of grid-container so that I could manage them
+  in grids as set up on css.  Further I tried moving image properites to css but they wouldn't
+keep the same consistent sizes.  The spacing between them changed and the shapes of the icons
+also did where some became squares rather than circles for example -->
+
+  <!-- lots of divs added to each of my html pages now to cater for the session storage tasks -->
+
+  <div class="grid-container">
+    <div>
+      <h4>SOCIALS</h4>
+      <a href="https://linktr.ee/ddhres" target=”_blank”>
+        <img class="icon" src="../images/linktree_blackLogo.png" alt="to my linktree page" style="object-fit:contain;
+          width:60px;
+          height:auto;">
+      </a>
+      <br>
+      <a href="https://www.facebook.com/DDHRes" target=”_blank”>
+        <img src="../images/facebook_logo.png" alt="facebook logo" style="object-fit:contain;
+      width:60px;
+      height:auto;">
+      </a>
+      <br>
+      <a href="https://www.mixcloud.com/ddh1/" target=”_blank”>
+        <img src=" ../images/mixcloud_logo.png" alt="mixcloud logo" style="object-fit:contain;
+      width:62px;
+      height:auto;">
+      </a>
+      <br>
+      <a href="https://hearthis.at/ddh/" target=”_blank”>
+        <img src="../images/hearthis_logo.png" alt="hearthis logo" style="object-fit:contain;
+      width:62px;
+      height:auto;">
+      </a>
+      <br>
+      <a href="https://www.twitch.tv/ddh_daz" target=”_blank”>
+        <img src=" ../images/Twitch_logo.png" alt="twitch logo" style="object-fit:contain;
+      width:60px;
+      height:auto;">
+      </a>
+      <br>
+      <a href="https://www.youtube.com/channel/UCZKPwfhEjo3LzXxVEi0C49A" target=”_blank”>
+        <img src=" ../images/YouTube_logo.png" alt="youtube logo" style="object-fit:contain;
+      width:65px;
+      height:auto;">
+      </a>
+      <br>
+      <a href="https://www.house-mixes.com/profile/doorstep" target=”_blank”>
+        <img src="../images/house-mixes_logo.png" alt="house mixes logo" style="object-fit:contain;
+      width:65px;
+      height:auto;">
+      </a>
+      <br>
+      <a href="https://soundcloud.com/darren-hall-52" target=”_blank”>
+        <img src="../images/soundcloud_icon.png" alt="soundcloud logo" style="object-fit:contain;
+      width:60px;
+      height:auto;">
+      </a>
+    </div>
+    <!-- I created an id so I could control the size/shape/orientation of my main picture -->
+    <div>
+
+      <h1>The home of DDH mixes</h1>
+      <img id="main-page-pic" src="
+        https://img.hearthis.at/1/6/6/_/uploads/10490510/image_user/w800_q70_----1664821318788.jpg" alt="DDH picture">
+      <br>
+      <!-- Button to save image for later and split up id for like buttons to help on session storage task-->
+      <button id="saveForLater">click to save image</button>
+      <button class="like-button" id="button1">Like</button>
+    </div>
+
+    <!-- I'm using h1, p, h3 and other sizes and below is one of the main sections of my 
+    grid, taking one of the bigger upper areas of my main web page -->
+    <div>
+      <div class="paragraph-container">
+        <h1>Welcome!</h1>
+      </div>
+      <div class="paragraph-container">
+
+        <p>By day I am a software tester though I like to DJ in my spare time.</p>
+        <button class="save-paragraph">Save for Later</button>
+        <button class="like-button" id="button2">Like</button>
+      </div>
+      <div class="paragraph-container">
+
+        <p>I am currently upskilling to become a full stack website developer so have built this site to test my
+          developer skills and to share my DJ mixes. That's two good deeds for the price of one in my book!</p>
+        <button class="save-paragraph">Save for Later</button>
+        <button class="like-button" id="button3">Like</button>
+      </div>
+      <div class="paragraph-container">
+        <p>There are links to my social pages on this site. If you want to keep up with my latest mixes then feel free
+          to
+          subscribe to any of them. I'm also active on Facebook with a dedicated page, you're welcome to follow me there
+          too for my latest news/gossip and if you just want to say hello too.</p>
+        <button class="save-paragraph">Save for Later</button>
+        <button class="like-button" id="button4">Like</button>
+      </div>
+      <div class="paragraph-container">
+        <p>Otherwise, I hope you enjoy some of the mixes I've shared.</p>
+        <button class="save-paragraph">Save for Later</button>
+        <button class="like-button" id="button5">Like</button>
+      </div>
+    </div>
+
+
+    <!-- Below is where I'm using a table structure -->
+
+    <div>
+      <h3>Music genres</h3>
+      <p>These are some of my favourite genre types. You can expect to hear them within many of my mixes therefore.
+      </p>
+      <table>
+        <tr>
+          <th>House</th>
+          <th>Techno</th>
+          <th>Trance</th>
+          <th>90s & 00s era</th>
+        <tr>
+          <td>Tech House</td>
+          <td>Peak</td>
+          <td>Progressive</td>
+          <td>Funky & Vocal</td>
+        </tr>
+        <tr>
+          <td>Funky & Disco</td>
+          <td>Dark</td>
+          <td>Deep</td>
+          <td>Trance (classics)</td>
+        </tr>
+        <tr>
+          <td>Tribal & Latin</td>
+          <td>Acid</td>
+          <td>Tech</td>
+          <td>Piano</td>
+        </tr>
+        <tr>
+          <td>Deep Tech & Minimal</td>
+          <td>Hard</td>
+          <td>Uplifting</td>
+          <td>Old Skool Hardcore</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Not a proper button but set up in css to behave similar to one.  On reading about it seemed to be
+      the best way to create it.  I've added stying including transitions by adding a pseudo element to it -->
+
+    <div>
+      <h3>Get in touch</h3>
+      <p>If there are any suggestions to improve the website's layout or its content please use the contact link to drop
+        me a message.</p>
+      <br>
+      <!-- Added the musical note here -->
+      <div id="musical-note">&#9835;</div>
+      <br>
+      <a id="contact-button" href="../HTML/contact.html">Contact</a>
+    </div>
+
+    <!-- This section enables me to show you an unordered list -->
+
+    <div>
+      <h3>DJs of influence</h3>
+      <p>Some of my favourite DJs:</p>
+      <ul>
+        <li>Tony De Vit</li>
+        <li> Stu Allan</li>
+        <li> Pete Tong</li>
+        <li> Carl Cox</li>
+        <li> Paul Oakenfold</li>
+        <li> Fatboy Slim</li>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <!-- the footer is its own flex box as it made spacing easier to handle.  It includes a 
+  top attribute with some stying added in css -->
+
+  <footer>
+    <div>
+      <p>No tracking cookies are stored during your session.</p>
+    </div>
+    <div id="top">
+      <a href="#">Back to top</a>
+    </div>
+    <div>
+      <p>Thanks for stopping by, hope to see you again soon.</p>
+    </div>
+
+  </footer>
+
+  <script src="../JS/storedStuffpt1.js"></script>
+
+  <script src="../JS/jQueryTasks.js"></script>
+</body>
+
+</html>
